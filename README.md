@@ -7,7 +7,7 @@ CSS와 HTML을 이용해 로딩 애니메이션을 만들어 보았습니다.
 1. 원을 3등분으로 나눠 다른 색을 나오게 하고 싶다.
 	- border-radius: 50% 로 원을 만들어 준다.
     - border-top 값으로 윗 부분에만 값을 준다.
-    - 가상요소 선택자 after와 befor로 똑같이 만들어 주고 position: absolute; top: -7px; left: 0;로 부모와 같은 위치에 위치시킨다.
+    - 가상요소 선택자 after와 befor로 똑같이 만들어 주고 position: absolute; top: -7px; left: 0;로 부모와 같은 위치에 위치시킨다.  
     --> top에 -7px 값을 주는 이유는 .loading 의 border-top 값에 7px 를 주었으므로 일치시키기 위해 주었습니다.
     - after와 befor에 transform: rotate(); 로 각각 120도와 -120도로 돌려줘서 원의 형태를 만들어 준다.
     - .loading과 .loading::after, .loading::before에 각각 다른 색 값을 준다.
@@ -22,6 +22,7 @@ CSS와 HTML을 이용해 로딩 애니메이션을 만들어 보았습니다.
 	- @keyframes 를 이용해 transform: rotate(360deg) 값을 줘서 360도 돌아가게 만들어 준다.  
     	--> 여기서 to는 100%를 의미한다(from은 0%를 의미한다.)
     - animation의 infinite 속성을 이용해 무한으로 돌아가게 한다.
+    
     > #### 여기서 문제!
     >이렇게 코딩하면 Loading... 이라는 글씨도 같이 360도 돌아버리게 된다.  
     >그러므로 transform: rotate(-360deg) 값을 주는 @keyframes를 하나 더 생성해 span 태그에 준다.  
