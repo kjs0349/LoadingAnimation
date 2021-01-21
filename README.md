@@ -19,7 +19,7 @@ CSS와 HTML을 이용해 로딩 애니메이션을 만들어 보았습니다.
     - text-align: center 와 line-height를 요소의 크기만큼 주어 가운데 위치 시킨다.
     
 3. 로딩 이미지 처럼 보이게 하기 위해 돌아가게 만들고 싶다.
-	- @keyframes 를 이용해 transform: rotate(360deg) 값을 줘서 360도 돌아가게 만들어 준다.
+	- @keyframes 를 이용해 transform: rotate(360deg) 값을 줘서 360도 돌아가게 만들어 준다.  
     	--> 여기서 to는 100%를 의미한다(from은 0%를 의미한다.)
     - animation의 infinite 속성을 이용해 무한으로 돌아가게 한다.
     > #### 여기서 문제!
