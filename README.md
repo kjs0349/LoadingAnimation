@@ -1,6 +1,8 @@
 # LoadingAnimation
 CSS와 HTML을 이용해 로딩 애니메이션을 만들어 보았습니다.
 
+![LoadingAnimation2](https://user-images.githubusercontent.com/61913417/105387904-5d2ce480-5c59-11eb-896a-1b27100a964b.gif)
+
 - 구상 과정과 구현
 1. 원을 3등분으로 나눠 다른 색을 나오게 하고 싶다.
 	- border-radius: 50% 로 원을 만들어 준다.
@@ -18,13 +20,13 @@ CSS와 HTML을 이용해 로딩 애니메이션을 만들어 보았습니다.
     
 3. 로딩 이미지 처럼 보이게 하기 위해 돌아가게 만들고 싶다.
 	- @keyframes 를 이용해 transform: rotate(360deg) 값을 줘서 360도 돌아가게 만들어 준다.
-    	# 여기서 to는 100%를 의미한다(from은 0%를 의미한다.)
+    	--> 여기서 to는 100%를 의미한다(from은 0%를 의미한다.)
     - animation의 infinite 속성을 이용해 무한으로 돌아가게 한다.
     > #### 여기서 문제!
-    이렇게 코딩하면 Loading... 이라는 글씨도 같이 360도 돌아버리게 된다.
-    그러므로 transform: rotate(-360deg) 값을 주는 @keyframes를 하나 더 생성해 span 태그에 준다.
-    이렇게 해주면 돌아가지 않는 것과 동일한 효과를 줄 수 있다.
-    하지만 여기서 Loading... 이 움직이는 이유는 top: -7px 로 부모의 위치와 맞춰주지 않았기 때문에 돌아가는 것이다. 
-    top: -7px를 주면
-    ![](https://images.velog.io/images/kjs0349/post/cf4d205f-6e78-42b2-9227-8b924f95d759/LoadingAnimation3.gif)
-    이렇게 만들 수 있다.
+    >이렇게 코딩하면 Loading... 이라는 글씨도 같이 360도 돌아버리게 된다.  
+    >그러므로 transform: rotate(-360deg) 값을 주는 @keyframes를 하나 더 생성해 span 태그에 준다.  
+    >이렇게 해주면 돌아가지 않는 것과 동일한 효과를 줄 수 있다.  
+    >하지만 여기서 Loading... 이 움직이는 이유는 top: -7px 로 부모의 위치와 맞춰주지 않았기 때문에 돌아가는 것이다.   
+    >top: -7px를 주면  
+    >![](https://images.velog.io/images/kjs0349/post/cf4d205f-6e78-42b2-9227-8b924f95d759/LoadingAnimation3.gif)  
+    >이렇게 만들 수 있다.
