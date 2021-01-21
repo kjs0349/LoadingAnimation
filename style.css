@@ -35,3 +35,14 @@ body {
     border-top: 7px dotted #2980b9;
     transform: rotate(-120deg);
 }
+.loading span {
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -7px;
+}
